@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1 ;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist </button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png">
+                    <img src="forward_icon.png" class="hide" style="border-radius: 10px; background-color: #232323;">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px; "></i>Install app</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+            </div>
+
+            <br>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"> 
+                    <p class="card-title">Top 50 - Global</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="dailymix1.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 1</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="podcast3.jpeg" class="card-img"> 
+                    <p class="card-title">The Global Story</p>
+                    <br>
+                    <p class="card-info">BBC</p>
+                </div>
+            </div>
+            <br><br> 
+
+            <h2>Trending now near you</h2>
+            <!-- <br> -->
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card2img.jpeg" class="card-img"> 
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg" class="card-img"> 
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg" class="card-img"> 
+                    <p class="card-title">Alter Ego, Naa Ready</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card7img.jpeg" class="card-img"> 
+                    <p class="card-title">Aashiqui 2 songs</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card9img.jpeg" class="card-img"> 
+                    <p class="card-title">We Don't Talk Anymore</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <br><br> 
+
+            <!-- Made for you -->
+            <h2>Made for you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="dailymix1.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 1</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="dailymix2.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 2</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="dailymix3.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 3</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="dailymix4.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 4</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="dailymix5.jpeg" class="card-img"> 
+                    <p class="card-title">Daily Mix 5</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+            </div>
+            <br><br> 
+
+            <!-- Popular and trending -->
+            <h2>Popular and trending</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="trending1.jpeg" class="card-img"> 
+                    <p class="card-title">New Music Punjabi</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="trending2.jpeg" class="card-img"> 
+                    <p class="card-title">New Music Hindi</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="trending3.jpeg" class="card-img"> 
+                    <p class="card-title">New Hindi Music 2024</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="trending4.jpeg" class="card-img"> 
+                    <p class="card-title">Trending Hindi Hits</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="trending5.jpeg" class="card-img"> 
+                    <p class="card-title">Top Bollywood Songs</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+            </div>
+            <br><br> 
+
+
+
+            <h2>Best of Bollywood singers</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="arijit.jpeg" class="card-img"> 
+                    <p class="card-title">This is Arijit Singh</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="armaanmalik.jpeg" class="card-img"> 
+                    <p class="card-title">This is Armaan Malik</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="kk.jpeg" class="card-img"> 
+                    <p class="card-title">This is KK</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="darshanraval.jpeg" class="card-img"> 
+                    <p class="card-title">This is Darshan Raval</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="mohitchauhan.jpeg" class="card-img"> 
+                    <p class="card-title">This is Mohit Chauhan</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+            </div>
+            <br><br> 
+
+            <h2>Best of Hollywood singers</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="charlieputh.jpeg" class="card-img"> 
+                    <p class="card-title">This is Charlie Puth</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="chainsmokers.jpeg" class="card-img"> 
+                    <p class="card-title">This is Chainsmokers</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="arianagrande.jpeg" class="card-img"> 
+                    <p class="card-title">This is Ariana Grande</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="shawnmendes.jpeg" class="card-img"> 
+                    <p class="card-title">This is Shawn Mendes</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="justin.jpeg" class="card-img"> 
+                    <p class="card-title">This is Justin Bieber</p>
+                    <br>
+                    <p class="card-info">By Spotify</p>
+                </div>
+            </div>
+            <br><br> 
+
+            <!-- podcasts -->
+            <h2>Podcasts</h2>
+            <br> 
+            <h3>Best episodes of the week:</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="podcast1.jpeg" class="card-img"> 
+                    <p class="card-title">The Joe Rogan Experience</p>
+                    <br>
+                    <p class="card-info">Danz</p>
+                </div>
+                <div class="card">
+                    <img src="podcast2.jpeg" class="card-img"> 
+                    <p class="card-title">India's Smartest Podcast</p>
+                    <br>
+                    <p class="card-info">Ranveer Allahbadia</p>
+                </div>
+                <div class="card">
+                    <img src="podcast3.jpeg" class="card-img"> 
+                    <p class="card-title">The Global Story</p>
+                    <br>
+                    <p class="card-info">BBC</p>
+                </div>
+                <div class="card">
+                    <img src="podcast4.jpeg" class="card-img"> 
+                    <p class="card-title">Pod of The Rings: India's Paris Olympics</p>
+                    <br>
+                    <p class="card-info">Express Sports</p>
+                </div>
+                <div class="card">
+                    <img src="podcast5.jpeg" class="card-img"> 
+                    <p class="card-title">Global India</p>
+                    <br>
+                    <p class="card-info">Brookings</p>
+                </div>
+            </div>
+            <br><br> 
+            
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card5img.jpeg" class="card-img"> 
+                    <p class="card-title">Top Songs - Global</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg" class="card-img"> 
+                    <p class="card-title">Top Songs - India</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg" class="card-img"> 
+                    <p class="card-title">Top 50 - Global</p>
+                    <br>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="music-player">
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="player_icon1.png" class="player-control-icon">
+                    <img src="player_icon2.png" class="player-control-icon">
+                    <img src="player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="player_icon4.png" class="player-control-icon">
+                    <img src="player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1 ">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls"></div>
+        </div>
+    </div>
+</body>
+</html>
